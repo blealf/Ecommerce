@@ -1,0 +1,50 @@
+The PrintWriter Test
+
+	*****************************
+	*                           *
+	*    SHOPPING CART SYSTEM   *
+	*    ====================   *
+	*                           *
+	*****************************
+
+
+
+Cart [ CartID= s001
+Customer [customerName= Name:[firstName=Francis, familyName=Henshaw], customerId= s50]
+Delivery date = 01/01/2016      Total Cost= 263502 pence]
+
+
+Order [quantity=4, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=272]
+Order [quantity=3, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=237]
+Order [quantity=40, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=1960]
+Order [quantity=20, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=30000]
+Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=20480]
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+Order [quantity=3, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=237]
+
+Number of orders = 9
+Total cost = 263502 pence
+
+
+		_________________________________
+		---------------------------------
+		||                             ||
+		|| \\     SHOPPING CART      //||
+		||   \\____________________//  ||
+		||     -------$$$$$$-------    ||
+		||          [========]         ||
+		||            SYSTEM           ||
+		||            CLOSED           ||
+		||-----------------------------||
+		L+'''''''''''''''''''''''''''''+J

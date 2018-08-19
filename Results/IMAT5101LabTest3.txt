@@ -1,0 +1,16 @@
+Cart [ CartID= CX4325753
+Customer [customerName= Name:[firstName=Julia, familyName=Enya], customerId= N5424]
+Delivery date = 19/01/2015      Total Cost= 10676 pence]
+
+
+Total cost = 10676
+Number of Orders is = 5
+
+printing only the order with 2 in product code
+
+Order [quantity=3, Product[ productCode= 511-295, description=John West Black Lumpfish Caviar, unitPrice=248 pence]
+ cost=744]
+Order [quantity=1, Product[ productCode= 673-293, description=Finest Beef - Chateaubriand, unitPrice=3500 pence]
+ cost=3500]
+Order [quantity=10, DiscountProduct[ productCode= 234-846, description=Cadbury Freddor, unitPrice=25 pence]
+[discountRate=0.5] cost=120]

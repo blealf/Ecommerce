@@ -1,0 +1,35 @@
+Sorting the Customers using the normal order sort....
+
+Outputting the result
+Customer [customerName= Name:[firstName=Manuel, familyName=Rice], customerId= A5222]
+Customer [customerName= Name:[firstName=Ted, familyName=Cruz], customerId= F5424]
+Customer [customerName= Name:[firstName=Peter, familyName=Squash], customerId= L5323]
+Customer [customerName= Name:[firstName=Joe, familyName=Bloggs], customerId= N5124]
+Customer [customerName= Name:[firstName=Julia, familyName=Enya], customerId= N5124]
+Customer [customerName= Name:[firstName=Joe, familyName=Tind], customerId= O5453]
+Customer [customerName= Name:[firstName=Fred, familyName=Cruz], customerId= S9424]
+Customer [customerName= Name:[firstName=Manuel, familyName=Rice], customerId= Y5222]
+
+Sorting the Customers using the reverse order sort....
+
+Outputting the result
+Customer [customerName= Name:[firstName=Manuel, familyName=Rice], customerId= Y5222]
+Customer [customerName= Name:[firstName=Fred, familyName=Cruz], customerId= S9424]
+Customer [customerName= Name:[firstName=Joe, familyName=Tind], customerId= O5453]
+Customer [customerName= Name:[firstName=Julia, familyName=Enya], customerId= N5124]
+Customer [customerName= Name:[firstName=Joe, familyName=Bloggs], customerId= N5124]
+Customer [customerName= Name:[firstName=Peter, familyName=Squash], customerId= L5323]
+Customer [customerName= Name:[firstName=Ted, familyName=Cruz], customerId= F5424]
+Customer [customerName= Name:[firstName=Manuel, familyName=Rice], customerId= A5222]
+
+Using the custom sort.... 
+
+Outputting the result
+Customer [customerName= Name:[firstName=Joe, familyName=Bloggs], customerId= N5124]
+Customer [customerName= Name:[firstName=Fred, familyName=Cruz], customerId= S9424]
+Customer [customerName= Name:[firstName=Ted, familyName=Cruz], customerId= F5424]
+Customer [customerName= Name:[firstName=Julia, familyName=Enya], customerId= N5124]
+Customer [customerName= Name:[firstName=Manuel, familyName=Rice], customerId= A5222]
+Customer [customerName= Name:[firstName=Manuel, familyName=Rice], customerId= Y5222]
+Customer [customerName= Name:[firstName=Peter, familyName=Squash], customerId= L5323]
+Customer [customerName= Name:[firstName=Joe, familyName=Tind], customerId= O5453]

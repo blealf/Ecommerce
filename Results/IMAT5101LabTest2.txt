@@ -1,0 +1,20 @@
+READING FROM TEXT FILE.............
+
+Cart [ CartID= CX4325753
+Customer [customerName= Name:[firstName=Julia, familyName=Enya], customerId= N5424]
+Delivery date = 19/01/2015      Total Cost= 10676 pence]
+
+
+Total cost = 10676 pence
+Number of Orders is = 5
+
+Order [quantity=3, Product[ productCode= 511-295, description=JohnWestBlackLumpfishCaviar, unitPrice=248 pence]
+ cost=744]
+Order [quantity=1, Product[ productCode= 673-293, description=FinestBeef-Chateaubriand, unitPrice=3500 pence]
+ cost=3500]
+Order [quantity=2, DiscountProduct[ productCode= 830-431, description=WholeBlackTruffle, unitPrice=945 pence]
+[discountRate=0.2] cost=1512]
+Order [quantity=4, Product[ productCode= 665-737, description=AtlanticLobster, unitPrice=1200 pence]
+ cost=4800]
+Order [quantity=10, DiscountProduct[ productCode= 234-846, description=CadburyFreddor, unitPrice=25 pence]
+[discountRate=0.5] cost=120]

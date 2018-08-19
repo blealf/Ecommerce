@@ -1,0 +1,38 @@
+Cart [ CartID= CX4325753
+Customer [customerName= Name:[firstName=Julia, familyName=Enya], customerId= N5424]
+Delivery date = 19/01/2015      Total Cost= 77701 pence]
+
+
+Total cost = 77701
+Number of Orders is = 10
+
+Order [quantity=3, Product[ productCode= 511-295, description=John West Black Lumpfish Caviar, unitPrice=248 pence]
+ cost=744]
+
+Order [quantity=1, Product[ productCode= 673-293, description=Finest Beef - Chateaubriand, unitPrice=3500 pence]
+ cost=3500]
+
+Order [quantity=2, DiscountProduct[ productCode= 830-431, description=Whole Black Truffle, unitPrice=945 pence]
+[discountRate=0.2] cost=1512]
+
+Order [quantity=4, Product[ productCode= 665-737, description=Atlantic Lobster, unitPrice=1200 pence]
+ cost=4800]
+
+DiscountOrder [toString()=Order [quantity=4, Product[ productCode= 665-737, description=Atlantic Lobster, unitPrice=1200 pence]
+ cost=4800], discountQuantity=2, getCost()=4800]
+
+Order [quantity=10, DiscountProduct[ productCode= 834-876, description=Freddor, unitPrice=25 pence]
+[discountRate=0.5] cost=120]
+
+DiscountOrder [toString()=Order [quantity=30, Product[ productCode= 573-777, description=Pacific Prawn, unitPrice=1200 pence]
+ cost=28800], discountQuantity=5, getCost()=28800]
+
+DiscountOrder [toString()=Order [quantity=40, Product[ productCode= 342-846, description=Spinach, unitPrice=25 pence]
+ cost=800], discountQuantity=5, getCost()=800]
+
+DiscountOrder [toString()=Order [quantity=29, Product[ productCode= 566-757, description=Java Octopus, unitPrice=1200 pence]
+ cost=32400], discountQuantity=10, getCost()=32400]
+
+DiscountOrder [toString()=Order [quantity=10, Product[ productCode= 432-806, description=Orange Squid, unitPrice=25 pence]
+ cost=225], discountQuantity=10, getCost()=225]
+

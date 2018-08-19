@@ -1,0 +1,422 @@
+
+	*****************************
+	*                           *
+	*    SHOPPING CART SYSTEM   *
+	*    ====================   *
+	*                           *
+	*****************************
+
+Cart [ CartID= s001
+Customer [customerName= Name:[firstName=Francis, familyName=Henshaw], customerId= s50]
+Delivery date = 01/01/2016      Total Cost= 0 pence]
+
+
+*********USECASE 1*********
+---------------------------
+Printing out all orders in the cart
+Order [quantity=3, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=237]
+Order [quantity=4, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=272]
+Order [quantity=40, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=1960]
+Order [quantity=20, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=30000]
+Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=20480]
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+Order [quantity=3, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=237]
+
+
+Printing the order, and calculating the total order and totalprice
+Order [quantity=3, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=237]
+Order [quantity=4, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=272]
+Order [quantity=40, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=1960]
+Order [quantity=20, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=30000]
+Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=20480]
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+Order [quantity=3, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=237]
+The total price = 263502
+The number of orders is = 9
+
+
+*********USECASE 2*********
+---------------------------
+Testing the sortOrders method...............
+
+Printing after sorting
+Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=20480]
+Order [quantity=20, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=30000]
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=40, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=1960]
+Order [quantity=4, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=272]
+Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+Order [quantity=3, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=237]
+Order [quantity=3, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=237]
+
+Testing the sortOrders method with custom sort.....
+
+Printing after sorting
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+Order [quantity=3, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=237]
+Order [quantity=3, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=237]
+Order [quantity=4, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=272]
+Order [quantity=40, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=1960]
+Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=20480]
+Order [quantity=20, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=30000]
+Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+
+Testing the numberOfOrders method.....
+Number of orders = 9
+
+
+*********USECASE 3*********
+---------------------------
+
+Testing the removeOrder method
+Removing one order.........
+
+Printing After removing an order
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+Order [quantity=3, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=237]
+Order [quantity=4, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=272]
+Order [quantity=40, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=1960]
+Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=20480]
+Order [quantity=20, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=30000]
+Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+
+The number of orders should be less than one now
+Number of orders = 8
+
+Testing the clearOrder method....
+
+Testing the containsOrder method
+Answer should be false
+Contains order? false
+
+Adding an Order to the cart again......
+
+An Order is added to cart
+
+Re-Testing the containsOrder method
+Contains order? true
+
+Adding all orders back to the cart
+
+Testing numberOfOrders method again
+number of Orders = 9
+Using the findOrder method
+Searching order with productCode "pq1"........
+Order found:  Order [quantity=3, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=237]
+Searching order with productCode "pa9"........
+Order found:  Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+Searching order with productCode "po9"........
+Order NOT found!!!:  Order [quantity=0, Product[ productCode= , description=, unitPrice=0 pence]
+ cost=0]
+
+
+=======================
+Using the PrintWriter
+
+#################################
+   Printing to file Complete     
+#################################
+
+
+******** USECASE 4 ********
+---------------------------
+
+Testing other methods.....
+
+Testing the getCartId method
+CartId = s001
+
+Testing the getTotalCost method
+Total Cost = 263502 pence
+
+Testing the increaseQuantity method on all orders
+The quantity of all orders should increase by one
+
+
+Printing after increasing quantity
+Order [quantity=5, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=340]
+Order [quantity=4, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=316]
+Order [quantity=41, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=2009]
+Order [quantity=21, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=31500]
+Order [quantity=31, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=217000]
+Order [quantity=33, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=21120]
+Order [quantity=5, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=135]
+Order [quantity=5, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=260]
+Order [quantity=4, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=316]
+
+Testing the decreaseQuantity method on all orders
+The quantity of all orders should decrease by one
+
+Printing after decreasing quantity
+Order [quantity=4, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=272]
+Order [quantity=3, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=237]
+Order [quantity=40, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=1960]
+Order [quantity=20, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=30000]
+Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=20480]
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+Order [quantity=3, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=237]
+
+Testing the increaseQuantity with parameter method on all orders
+The quantity of all orders should increase by five
+
+Printing after increasing quantity by five
+Order [quantity=9, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=612]
+Order [quantity=8, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=632]
+Order [quantity=45, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=2205]
+Order [quantity=25, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=37500]
+Order [quantity=35, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=245000]
+Order [quantity=37, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=23680]
+Order [quantity=9, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=243]
+Order [quantity=9, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=468]
+Order [quantity=8, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=632]
+
+Testing the decreaseQuantity with parameter method on all orders
+The quantity of all orders should decrease by one
+
+Printing after decreasing quantity by five
+Order [quantity=5, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=340]
+Order [quantity=4, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=316]
+Order [quantity=41, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=2009]
+Order [quantity=21, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=31500]
+Order [quantity=31, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=217000]
+Order [quantity=33, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=21120]
+Order [quantity=5, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=135]
+Order [quantity=5, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=260]
+Order [quantity=4, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=316]
+
+Increasing the fourth order on the list by four
+The fourth order should increase by four
+
+Printing after increasing quantity of fourth order by four
+Order [quantity=5, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=340]
+Order [quantity=4, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=316]
+Order [quantity=41, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=2009]
+Order [quantity=21, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=31500]
+Order [quantity=35, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=245000]
+Order [quantity=33, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=21120]
+Order [quantity=5, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=135]
+Order [quantity=5, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=260]
+Order [quantity=4, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=316]
+
+decreasing the sixth order on the list by one
+The sixth order should increase by one
+
+Printing after decreasing quantity of sixth order by one
+Order [quantity=5, DiscountProduct[ productCode= pn4, description=nvidia, unitPrice=85 pence]
+[discountRate=0.2] cost=340]
+Order [quantity=4, Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+ cost=316]
+Order [quantity=41, DiscountProduct[ productCode= pm6, description=mediatek, unitPrice=70 pence]
+[discountRate=0.3] cost=2009]
+Order [quantity=21, Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+ cost=31500]
+Order [quantity=35, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=245000]
+Order [quantity=33, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=21120]
+Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order [quantity=5, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=260]
+Order [quantity=4, Product[ productCode= pp1, description=quadc, unitPrice=79 pence]
+ cost=316]
+
+
+******** USECASE 5 ********
+---------------------------
+
+Creating two reward products.....with product code pq1 and pi7
+
+Adding the two product to rewardProcessor instance.....
+
+Adding reward points to the already existing 
+cart using the rewardPoints method...
+Reward points generated = 25
+
+Printing the rewardable products
+RewardProcessor [product=Product[ productCode= pq1, description=qualcomm, unitPrice=79 pence]
+
+Product[ productCode= pi7, description=intel, unitPrice=1500 pence]
+
+
+Testing the getRewardPoints of the Customer class
+reward points forCustomer [customerName= Name:[firstName=Francis, familyName=Henshaw], customerId= s50] = 25
+
+Increasing the quantity of all orders in the customer's cart by two... 
+this should in crease the reward point by 25 + 8
+
+Generating the reward points and adding it to the existing 25 points
+Reward points generated = 58
+
+
+******** USECASE 6 ********
+---------------------------
+
+Creating new policies.........
+
+Creating new set of orders
+
+Applying the different policies......
+
+Using the default policy
+Order 1 = Order [quantity=30, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=210000]
+
+Using the buy-one-get-one-free policy
+Order 2 = Order [quantity=32, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=10240]
+
+Using the buy-two-get-one-free policy
+Order 3 = Order [quantity=4, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=54]
+
+Using the buy-five-get-one-free policy
+Order 4 = Order [quantity=4, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+
+Creating a cart to store all the orders...
+
+Adding all the orders with different policies to the cart....
+
+Clarification..................
+The first item uses the default policy
+The second item uses the buy-one-get-one-free policy
+The third item uses the buy-two-get-one-free policy
+The foruth item uses the buy-five-get-one-free policy
+
+Increasing the quantity of all orders in the cart by five
+
+Printing out all the orders and their prices
+Order1 = Order [quantity=35, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=245000]
+Order2 = Order [quantity=37, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=11520]
+Order3 = Order [quantity=9, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=135]
+Order4 = Order [quantity=9, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=416]
+Setting all orders to use the buy-one-get-one-free policy
+
+Printing out all the orders and their prices again...
+Price of Order 2 should remain the same
+Order1 = Order [quantity=35, Product[ productCode= pa9, description=amd, unitPrice=7000 pence]
+ cost=119000]
+Order2 = Order [quantity=37, Product[ productCode= par, description=arduino, unitPrice=640 pence]
+ cost=11520]
+Order3 = Order [quantity=9, DiscountProduct[ productCode= pm4, description=pi, unitPrice=55 pence]
+[discountRate=0.5] cost=108]
+Order4 = Order [quantity=9, DiscountProduct[ productCode= poe, description=elec, unitPrice=75 pence]
+[discountRate=0.3] cost=208]
+
+
+		_________________________________
+		---------------------------------
+		||                             ||
+		|| \\     SHOPPING CART      //||
+		||   \\____________________//  ||
+		||     -------$$$$$$-------    ||
+		||          [========]         ||
+		||            SYSTEM           ||
+		||            CLOSED           ||
+		||-----------------------------||
+		L+'''''''''''''''''''''''''''''+J
